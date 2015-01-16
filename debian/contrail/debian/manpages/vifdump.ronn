@@ -5,7 +5,7 @@ vifdump(1) -- OpenContrail vRouter utils
 
 `vifdump` <vif_index> [<tcpdump_options>]
 
-`vifdump` `reset`
+`vifdump` `stop` <vif_index>
 
 ## DESCRIPTION
 
@@ -16,7 +16,7 @@ The package opencontrail-vrouter-utils provides command line utilities to config
 The vifdump(1) utility runs tcpdump on a specific vif interface and should be used for the DPDK version of OpenContrail vRouter only.
 For the non-DPDK Linux kernel module version the tcpdump(8) utility should be used instead.
 
-The `vifdump` `reset` command resets all the monitoring interfaces.
+The `vifdump` `stop` command stops the specified vif monitoring and removes the corresponding monitoring interface.
 
 ## EXAMPLES
 
