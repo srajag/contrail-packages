@@ -3,6 +3,7 @@ description     "Supervisord for VNC Vrouter"
 start on runlevel [2345]
 stop on runlevel [016]
 limit core unlimited unlimited
+kill timeout 20
 
 pre-start script
     if [ -f /opt/contrail/bin/vrouter-pre-start.sh ]; then
